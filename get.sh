@@ -6,8 +6,8 @@ URL="https://objects.githubusercontent.com/github-production-release-asset-2e65b
 # Destination file name
 DEST="XQuartz-2.8.5.pkg"
 
-# Download the file
-fetch -o $DEST "$URL"
+# Download the file using curl
+curl -L -o $DEST "$URL"
 
 # Check if the download was successful
 if [ $? -eq 0 ]; then
